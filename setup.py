@@ -8,7 +8,7 @@ __version__ = "0.0.0"
 
 REPO_NAME = "Kidney-Diseases-Classification"
 AUTHOR_USER_NAME = "Saphythrix"
-SRC_REPO = "cnnClassifier"
+SRC_REPO = "CNNClassifier"
 AUTHOR_EMAIL = "sayantan.mixed@gmail.com"
 
 
