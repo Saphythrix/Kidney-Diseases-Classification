@@ -1,2 +1,5 @@
 [2026-07-25 15:48:18,622:INFO:main:welcome to our custom log]
 [2026-07-25 15:56:51,820:INFO:main:welcome to our custom log]
+[2026-07-30 00:30:44,787:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2026-07-30 00:30:44,794:INFO:common:yaml file: params.yaml loaded successfully]
+[2026-07-30 00:30:44,796:INFO:common:created directory at: artifacts]
