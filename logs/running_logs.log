@@ -19,3 +19,121 @@
 [2026-07-30 23:34:42,320:INFO:main:>>>>>> stage Data Ingestion stage completed <<<<<<
 
 x==========x]
+[2026-07-31 00:27:30,692:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2026-07-31 00:27:30,700:INFO:common:yaml file: params.yaml loaded successfully]
+[2026-07-31 00:30:40,088:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2026-07-31 00:30:40,091:INFO:common:yaml file: params.yaml loaded successfully]
+[2026-07-31 00:30:40,092:INFO:common:created directory at: artifacts]
+[2026-07-31 00:30:40,095:INFO:common:created directory at: artifacts/prepare_base_model]
+[2026-07-31 00:31:49,050:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2026-07-31 00:31:49,052:INFO:common:yaml file: params.yaml loaded successfully]
+[2026-07-31 00:31:49,054:INFO:common:created directory at: artifacts]
+[2026-07-31 00:31:49,055:INFO:common:created directory at: artifacts/prepare_base_model]
+[2026-07-31 00:37:04,251:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2026-07-31 00:37:04,253:INFO:common:yaml file: params.yaml loaded successfully]
+[2026-07-31 00:37:04,254:INFO:common:created directory at: artifacts]
+[2026-07-31 00:37:04,256:INFO:common:created directory at: artifacts/prepare_base_model]
+[2026-07-31 00:39:05,691:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2026-07-31 00:39:05,694:INFO:common:yaml file: params.yaml loaded successfully]
+[2026-07-31 00:39:05,696:INFO:common:created directory at: artifacts]
+[2026-07-31 00:39:05,697:INFO:common:created directory at: artifacts/prepare_base_model]
+[2026-07-31 00:42:50,312:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2026-07-31 00:42:50,421:INFO:common:yaml file: params.yaml loaded successfully]
+[2026-07-31 00:42:50,422:INFO:common:created directory at: artifacts]
+[2026-07-31 00:42:50,423:INFO:common:created directory at: artifacts/prepare_base_model]
+[2026-07-31 00:47:31,550:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2026-07-31 00:47:31,558:INFO:common:yaml file: params.yaml loaded successfully]
+[2026-07-31 00:47:31,561:INFO:common:created directory at: artifacts]
+[2026-07-31 00:47:31,562:INFO:common:created directory at: artifacts/prepare_base_model]
+[2026-07-31 00:49:04,407:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2026-07-31 00:49:04,411:INFO:common:yaml file: params.yaml loaded successfully]
+[2026-07-31 00:49:04,413:INFO:common:created directory at: artifacts]
+[2026-07-31 00:49:04,415:INFO:common:created directory at: artifacts/prepare_base_model]
+[2026-07-31 00:53:33,704:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2026-07-31 00:53:33,708:INFO:common:yaml file: params.yaml loaded successfully]
+[2026-07-31 00:53:33,709:INFO:common:created directory at: artifacts]
+[2026-07-31 00:53:33,711:INFO:common:created directory at: artifacts/prepare_base_model]
+[2026-07-31 00:55:31,719:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2026-07-31 00:55:31,722:INFO:common:yaml file: params.yaml loaded successfully]
+[2026-07-31 00:55:31,724:INFO:common:created directory at: artifacts]
+[2026-07-31 00:55:31,725:INFO:common:created directory at: artifacts/prepare_base_model]
+[2026-07-31 00:55:32,134:WARNING:saving_utils:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2026-07-31 01:06:23,515:INFO:main:>>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-07-31 01:06:23,517:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2026-07-31 01:06:23,520:INFO:common:yaml file: params.yaml loaded successfully]
+[2026-07-31 01:06:23,521:ERROR:main:"'ConfigBox' object has no attribute 'artifact_root'"]
+Traceback (most recent call last):
+  File "box\box.py", line 503, in box.box.Box.__getitem__
+KeyError: 'artifact_root'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\box.py", line 536, in box.box.Box.__getattr__
+  File "box\box.py", line 524, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'artifact_root'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 538, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'artifact_root'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\config_box.py", line 28, in box.config_box.ConfigBox.__getattr__
+  File "box\box.py", line 552, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'artifact_root'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 503, in box.box.Box.__getitem__
+KeyError: 'artifact_root'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\box.py", line 536, in box.box.Box.__getattr__
+  File "box\box.py", line 524, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'artifact_root'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 538, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'artifact_root'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "main.py", line 9, in <module>
+    obj.main()
+  File "c:\users\sayantan das\onedrive\desktop\projects\kidney-diseases-classification\src\CNNClassifier\pipeline\stage_01_data_ingestion.py", line 12, in main
+    config = ConfigurationManager()
+  File "c:\users\sayantan das\onedrive\desktop\projects\kidney-diseases-classification\src\CNNClassifier\config\configuration.py", line 10, in __init__
+    create_directories([self.config.artifact_root])
+  File "box\config_box.py", line 30, in box.config_box.ConfigBox.__getattr__
+  File "box\box.py", line 552, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'artifact_root'"
+[2026-07-31 01:08:25,934:INFO:main:>>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-07-31 01:08:25,936:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2026-07-31 01:08:25,937:INFO:common:yaml file: params.yaml loaded successfully]
+[2026-07-31 01:08:25,938:INFO:common:created directory at: artifacts]
+[2026-07-31 01:08:25,939:INFO:common:created directory at: artifacts/data_ingestion]
+[2026-07-31 01:08:25,940:INFO:Data_ingestion:Downloading data from https://drive.google.com/file/d/1LOnCl39VSB_9LJamurM7WR_6GiBmq99m/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-07-31 01:08:42,273:INFO:Data_ingestion:Downloaded data from https://drive.google.com/file/d/1LOnCl39VSB_9LJamurM7WR_6GiBmq99m/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-07-31 01:08:42,831:INFO:main:>>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-07-31 01:08:42,831:INFO:main:*******************]
+[2026-07-31 01:08:42,831:INFO:main:>>>>>> stage Prepare base model started <<<<<<]
+[2026-07-31 01:08:42,834:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2026-07-31 01:08:42,835:INFO:common:yaml file: params.yaml loaded successfully]
+[2026-07-31 01:08:42,836:INFO:common:created directory at: artifacts]
+[2026-07-31 01:08:42,837:INFO:common:created directory at: artifacts/prepare_base_model]
+[2026-07-31 01:08:43,347:WARNING:saving_utils:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2026-07-31 01:08:43,638:INFO:main:>>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
