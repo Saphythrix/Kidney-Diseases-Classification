@@ -137,3 +137,91 @@ x==========x]
 [2026-07-31 01:08:43,638:INFO:main:>>>>>> stage Prepare base model completed <<<<<<
 
 x==========x]
+[2026-08-02 00:22:51,517:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2026-08-02 00:22:51,533:INFO:common:yaml file: params.yaml loaded successfully]
+[2026-08-02 00:23:22,548:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2026-08-02 00:23:22,552:INFO:common:yaml file: params.yaml loaded successfully]
+[2026-08-02 00:26:09,195:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2026-08-02 00:26:09,197:INFO:common:yaml file: params.yaml loaded successfully]
+[2026-08-02 00:26:09,199:INFO:common:created directory at: artifacts]
+[2026-08-02 00:26:09,200:INFO:common:created directory at: artifacts\training]
+[2026-08-02 00:28:36,448:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2026-08-02 00:28:36,453:INFO:common:yaml file: params.yaml loaded successfully]
+[2026-08-02 00:28:36,455:INFO:common:created directory at: artifacts]
+[2026-08-02 00:28:36,456:INFO:common:created directory at: artifacts\training]
+[2026-08-02 00:29:53,036:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2026-08-02 00:29:53,039:INFO:common:yaml file: params.yaml loaded successfully]
+[2026-08-02 00:29:53,040:INFO:common:created directory at: artifacts]
+[2026-08-02 00:29:53,042:INFO:common:created directory at: artifacts\training]
+[2026-08-02 00:30:51,769:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2026-08-02 00:30:51,772:INFO:common:yaml file: params.yaml loaded successfully]
+[2026-08-02 00:30:51,773:INFO:common:created directory at: artifacts]
+[2026-08-02 00:30:51,775:INFO:common:created directory at: artifacts\training]
+[2026-08-02 00:38:54,664:INFO:main:>>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-08-02 00:38:54,667:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2026-08-02 00:38:54,669:INFO:common:yaml file: params.yaml loaded successfully]
+[2026-08-02 00:38:54,670:INFO:common:created directory at: artifacts]
+[2026-08-02 00:38:54,670:INFO:common:created directory at: artifacts/data_ingestion]
+[2026-08-02 00:38:54,671:INFO:Data_ingestion:Downloading data from https://drive.google.com/file/d/1LOnCl39VSB_9LJamurM7WR_6GiBmq99m/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-08-02 00:39:10,561:INFO:Data_ingestion:Downloaded data from https://drive.google.com/file/d/1LOnCl39VSB_9LJamurM7WR_6GiBmq99m/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-08-02 00:39:11,248:INFO:main:>>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-08-02 00:39:11,249:INFO:main:*******************]
+[2026-08-02 00:39:11,249:INFO:main:>>>>>> stage Prepare base model started <<<<<<]
+[2026-08-02 00:39:11,252:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2026-08-02 00:39:11,253:INFO:common:yaml file: params.yaml loaded successfully]
+[2026-08-02 00:39:11,254:INFO:common:created directory at: artifacts]
+[2026-08-02 00:39:11,255:INFO:common:created directory at: artifacts/prepare_base_model]
+[2026-08-02 00:39:11,789:WARNING:saving_utils:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2026-08-02 00:39:11,960:INFO:main:>>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2026-08-02 00:39:11,960:INFO:main:*******************]
+[2026-08-02 00:39:11,960:INFO:main:>>>>>> stage Training started <<<<<<]
+[2026-08-02 00:39:11,962:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2026-08-02 00:39:11,964:INFO:common:yaml file: params.yaml loaded successfully]
+[2026-08-02 00:39:11,964:INFO:common:created directory at: artifacts]
+[2026-08-02 00:39:11,965:INFO:common:created directory at: artifacts\training]
+[2026-08-02 00:39:12,244:ERROR:main:[WinError 3] The system cannot find the path specified: 'artifacts\\data_ingestion\\kidney-ct-scan-image']
+Traceback (most recent call last):
+  File "main.py", line 33, in <module>
+    model_trainer.main()
+  File "c:\users\sayantan das\onedrive\desktop\projects\kidney-diseases-classification\src\CNNClassifier\pipeline\stage_03_model_training.py", line 20, in main
+    training.train_valid_generator()
+  File "c:\users\sayantan das\onedrive\desktop\projects\kidney-diseases-classification\src\CNNClassifier\components\model_training.py", line 35, in train_valid_generator
+    self.valid_generator = valid_datagenerator.flow_from_directory(
+  File "D:\Anaconda\envs\Kidney\lib\site-packages\keras\preprocessing\image.py", line 1648, in flow_from_directory
+    return DirectoryIterator(
+  File "D:\Anaconda\envs\Kidney\lib\site-packages\keras\preprocessing\image.py", line 563, in __init__
+    for subdir in sorted(os.listdir(directory)):
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'artifacts\\data_ingestion\\kidney-ct-scan-image'
+[2026-08-02 00:43:00,824:INFO:main:>>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-08-02 00:43:00,826:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2026-08-02 00:43:00,828:INFO:common:yaml file: params.yaml loaded successfully]
+[2026-08-02 00:43:00,829:INFO:common:created directory at: artifacts]
+[2026-08-02 00:43:00,829:INFO:common:created directory at: artifacts/data_ingestion]
+[2026-08-02 00:43:00,830:INFO:Data_ingestion:Downloading data from https://drive.google.com/file/d/1LOnCl39VSB_9LJamurM7WR_6GiBmq99m/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-08-02 00:43:16,778:INFO:Data_ingestion:Downloaded data from https://drive.google.com/file/d/1LOnCl39VSB_9LJamurM7WR_6GiBmq99m/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-08-02 00:43:17,253:INFO:main:>>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-08-02 00:43:17,253:INFO:main:*******************]
+[2026-08-02 00:43:17,253:INFO:main:>>>>>> stage Prepare base model started <<<<<<]
+[2026-08-02 00:43:17,255:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2026-08-02 00:43:17,257:INFO:common:yaml file: params.yaml loaded successfully]
+[2026-08-02 00:43:17,257:INFO:common:created directory at: artifacts]
+[2026-08-02 00:43:17,258:INFO:common:created directory at: artifacts/prepare_base_model]
+[2026-08-02 00:43:17,616:WARNING:saving_utils:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2026-08-02 00:43:17,878:INFO:main:>>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2026-08-02 00:43:17,878:INFO:main:*******************]
+[2026-08-02 00:43:17,878:INFO:main:>>>>>> stage Training started <<<<<<]
+[2026-08-02 00:43:17,880:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2026-08-02 00:43:17,881:INFO:common:yaml file: params.yaml loaded successfully]
+[2026-08-02 00:43:17,882:INFO:common:created directory at: artifacts]
+[2026-08-02 00:43:17,883:INFO:common:created directory at: artifacts\training]
+[2026-08-02 00:46:37,388:INFO:main:>>>>>> stage Training completed <<<<<<
+
+x==========x]
